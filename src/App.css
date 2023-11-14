@@ -1,0 +1,103 @@
+* {
+  font-family: "Archivo", sans-serif;
+}
+body {
+  margin: 0px;
+  padding: 4rem 16rem;
+}
+
+@media only screen and (max-width: 992px) {
+  body {
+    padding: 4rem 4rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    padding: 0rem;
+    height: 100vh;
+  }
+
+  #root {
+    height: 100vh;
+  }
+  .navbar {
+    margin-top: 2rem;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  opacity: 55%;
+  padding: 12px;
+}
+.profile-image {
+  padding: 1rem;
+}
+.info {
+  display: flex;
+}
+.info div {
+  padding: 1rem;
+}
+.footer {
+  display: flex;
+}
+.footer img {
+  height: 20px;
+  width: 20px;
+  margin: 16px;
+}
+
+@media only screen and (max-width: 480px) {
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(244, 244, 244)
+  }
+}
+
+.container {
+  padding: 4rem;
+}
+.title {
+  letter-spacing: 10px;
+  font-size: xx-large;
+  font-weight: 400;
+}
+#github {
+  margin-left: 0px;
+}
+.more-about {
+  font-size: small;
+  padding: 25px 0 5px 0;
+}
+.moving-arrow {
+  margin-left: 30px;
+  position: relative;
+  transition: left 0.5s ease-in-out;
+  opacity: 80%;
+  align-items: center;
+  display: flex;
+  align-items: center;
+}
+.about-me-section {
+  display: flex;
+  align-items: center;
+  opacity: 75%;
+}
+
+.summary {
+  opacity: 80%;
+  font-size: smaller;
+  margin: 25px 0 5px 0;
+  line-height: 25px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
