@@ -12,8 +12,15 @@ body {
   }
 }
 
+@media only screen and (max-width: 768px){
+  .container {
+    padding: 32px;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   body {
+    margin: 0px;
     padding: 0rem;
     height: 100vh;
   }
@@ -22,7 +29,7 @@ body {
     height: 100vh;
   }
   .navbar {
-    margin-top: 2rem;
+    margin-top: 0;
   }
 }
 
@@ -32,6 +39,7 @@ body {
   font-weight: 500;
   opacity: 55%;
   padding: 12px;
+  align-items: center;
 }
 .profile-image {
   padding: 1rem;
@@ -51,6 +59,10 @@ body {
   margin: 16px;
 }
 
+.container {
+  padding: 4rem;
+}
+
 @media only screen and (max-width: 480px) {
   .footer {
     position: fixed;
@@ -59,12 +71,11 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    background-color: rgb(244, 244, 244)
+    background-color: rgb(244, 244, 244);
   }
-}
-
-.container {
-  padding: 4rem;
+  .container {
+    padding: 28px;
+  }
 }
 .title {
   letter-spacing: 10px;
@@ -100,4 +111,66 @@ body {
   line-height: 25px;
   font-weight: 400;
   letter-spacing: 1px;
+}
+
+.hamburger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding-right: 16px;
+}
+
+.line {
+  height: 5px;
+  width: 25px;
+  margin: 2px 0px;
+  transition: 0.4s;
+  padding: 0px;
+  background-color: black;
+  border-radius: 10px;
+  opacity: 75%;
+}
+
+.hamburger:hover {
+}
+
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.contact-me input {
+  margin: 10px 10px 10px 0px;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-me {
+    width: 100%;
+  }
+}
+
+.message {
+  height: 150px;
+  margin: 10px 10px 10px 0px;
+  padding: 10px;
+  resize: none;
+}
+
+.send-message {
+
+  background-color: black;
+  color: white;
+  padding: 15px;
+  margin-top: 15px;
+  width: 170px;
+  border: 1px solid black;
+  border-radius: 6px;
+  letter-spacing: 16px;
+  text-indent: 8px;
+}
+
+.send-message:hover {
+  opacity: 75%;
 }

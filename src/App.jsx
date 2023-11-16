@@ -1,6 +1,8 @@
 import Footer  from "./component/footer"
 import Navbar  from "./component/navbar"
 import Content from "./component/Content"
+import { Contact } from "./component/Contact"
+import More from "./component/More"
 import './App.css'
 
 function App() {
@@ -9,7 +11,9 @@ function App() {
     <>
     <Navbar/>
     <div className="container">
-    <Content/>
+    {/* <Content/> */}
+    <Contact/>
+    <More/>
     <Footer/>
     </div>
     </>

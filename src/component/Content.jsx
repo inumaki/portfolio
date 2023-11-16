@@ -18,8 +18,6 @@ function Content() {
         catch me in the realms of <strong>articles</strong>, manga, and creative{" "}
         <strong>coding</strong> adventures.
       </p>
-
-      <More />
     </>
   );
 }
