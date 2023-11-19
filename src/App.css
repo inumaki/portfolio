@@ -1,6 +1,11 @@
 * {
   font-family: "Archivo", sans-serif;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
 body {
   margin: 0px;
   padding: 4rem 16rem;
@@ -12,7 +17,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
   .container {
     padding: 32px;
   }
@@ -159,7 +164,6 @@ body {
 }
 
 .send-message {
-
   background-color: black;
   color: white;
   padding: 15px;

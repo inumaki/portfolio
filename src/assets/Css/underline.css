@@ -14,7 +14,7 @@
   bottom: 0;
   left: 12px;
   background-color: black;
-  opacity: 75%;
+  opacity: 80%;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }

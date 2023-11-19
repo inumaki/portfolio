@@ -2,6 +2,7 @@ import "../App.css";
 import "../assets/Css/underline.css";
 import profile from "../assets/png/profile.jpg";
 import { useState, useEffect } from "react";
+import { NavOption } from "./NavOption";
 
 function Navbar() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -21,16 +22,14 @@ function Navbar() {
 
   return (
     <div className="navbar">
-      <div className="profile-image">
+      <a href = "/"><div className="profile-image">
         <img src={profile} style={{ height: "32px", width: "32px" }} />
-      </div>
+      </div></a>
 
       {!isMobile && (
         <>
           <div className="info">
-            <div className="hover-underline-animation">About</div>
-            <div className="hover-underline-animation">Projects</div>
-            <div className="hover-underline-animation">Contact</div>
+            <NavOption />
           </div>
         </>
       )}
