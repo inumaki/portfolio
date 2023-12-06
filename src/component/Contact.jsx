@@ -1,7 +1,6 @@
 import "../App.css";
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export const Contact = () => {
@@ -102,7 +101,7 @@ export const Contact = () => {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
-        {temporaryText && <div className= {`{messageError ? 'error' : 'status'}`}>{temporaryText}</div>}
+        {temporaryText && <div className= {messageError ? 'error' : 'status'}>{temporaryText}</div>}
         <input
           type="submit"
           className="send-message"
