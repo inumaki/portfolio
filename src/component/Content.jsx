@@ -1,11 +1,14 @@
 import "../App.css";
 import More from "../component/More";
 import "../assets/Css/glitch.scss";
+import { Link } from "react-router-dom";
+import { Resume } from "./Resume";
+import "../assets/Css/resume.css"
 
 function Content() {
   return (
     <>
-      <div className="title glitch">Aryan Katiyar</div>
+     <Link to = "/"> <div className="title glitch">Aryan Katiyar</div></Link>
 
       <p className="summary">
         I am a postgraduate from the National Institute of Technology Patna,
@@ -18,6 +21,7 @@ function Content() {
         catch me in the realms of <strong>articles</strong>, manga, and creative{" "}
         <strong>coding</strong> adventures.
       </p>
+      <Resume/>
     </>
   );
 }

@@ -1,10 +1,12 @@
 export const path = new Map();
-path.set('/about', 0);
-path.set('/project', 1);
-path.set('/contact', 2);
+path.set('/', 'about')
+path.set('/about', 'projects');
+path.set('/projects', 'contact');
+path.set('/contact', '');
 
-export const pathName = new Map();
-pathName.set(0, 'About');
-pathName.set(1, 'Project');
-pathName.set(2, 'Contact');
 
+export const text  = new Map();
+text.set('/', 'See More About Me');
+text.set('/about', 'See Projects');
+text.set('/projects', 'Contact Me');
+text.set('/contact', 'Go Back to Home Page');

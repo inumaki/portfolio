@@ -9,6 +9,7 @@ a {
 body {
   margin: 0px;
   padding: 4rem 16rem;
+  /* overflow: hidden; */
 }
 
 @media only screen and (max-width: 992px) {
@@ -20,6 +21,22 @@ body {
 @media only screen and (max-width: 768px) {
   .container {
     padding: 32px;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .hamburger {
+    padding-top: 16px;
+  }
+  .cross {
+    position: absolute;
+    top: 0;
+    right: 0px;
+  }
+  .min-navbar {
+    /* padding: 20px; */
+    margin: 0px;
   }
 }
 
@@ -35,6 +52,7 @@ body {
   }
   .navbar {
     margin-top: 0;
+    padding-top: 16px;
   }
 }
 
@@ -82,6 +100,7 @@ body {
     padding: 28px;
   }
 }
+
 .title {
   letter-spacing: 10px;
   font-size: xx-large;
@@ -92,10 +111,10 @@ body {
 }
 .more-about {
   font-size: small;
-  padding: 25px 0 5px 0;
+  padding: 0px 0 5px 0;
 }
 .moving-arrow {
-  margin-left: 30px;
+  margin-left: 15px;
   position: relative;
   transition: left 0.5s ease-in-out;
   opacity: 80%;
@@ -112,7 +131,7 @@ body {
 .summary {
   opacity: 80%;
   font-size: smaller;
-  margin: 25px 0 5px 0;
+  margin: 25px 0 25px 0;
   line-height: 25px;
   font-weight: 400;
   letter-spacing: 1px;
@@ -168,13 +187,102 @@ body {
   color: white;
   padding: 15px;
   margin-top: 15px;
-  width: 170px;
+  width: 125px;
   border: 1px solid black;
   border-radius: 6px;
   letter-spacing: 16px;
   text-indent: 8px;
+  margin-bottom: 25px;
 }
 
 .send-message:hover {
   opacity: 75%;
+}
+
+.send-message:active {
+  background-color: white;
+  color: black;
+}
+
+.reference {
+  color: blueviolet;
+}
+
+.list-items {
+  font-size: large;
+  letter-spacing: 2px;
+  margin-top: 25px;
+}
+
+.sub-summary {
+  opacity: 80%;
+  font-size: smaller;
+  margin: 12px 0 12px 0;
+  line-height: 25px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.sub-heading {
+  font-size: large;
+  letter-spacing: 2px;
+  margin-top: 25px;
+}
+
+.min-navbar {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 120;
+}
+.min-navbar div {
+  color: white;
+  margin: 10px;
+  letter-spacing: 2px;
+  font-size: large;
+}
+
+.mini-nav {
+  margin: 25px;
+}
+.mini-nav div {
+  letter-spacing: 5px;
+  font-size: large;
+}
+
+ul {
+  list-style: circle;
+}
+
+.cross {
+  height: 30px;
+  width: 30px;
+  right: 5px;
+  top: 5px;
+  overflow: hidden;
+}
+
+.cross img {
+  height: 30px;
+  width: 30px;
+}
+
+.no-scroll {
+  overflow: hidden;
+  background-color: grey;
+}
+
+.error {
+  color: palevioletred;
+  font-size: smaller;
+}
+
+.status {
+  color:rgb(173, 254, 80);
+  font-size: smaller;
 }

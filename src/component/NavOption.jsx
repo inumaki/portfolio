@@ -1,24 +1,28 @@
 import { useLocation } from "react-router-dom";
+import "../App.css"
 
-export const NavOption = () => {
+export const NavOption = (props) => {
   const location = useLocation();
   const currentPath = location.pathname;
 
   return (
     <>
+    {props.class == "mini-nav" && currentPath != '/' && (  <a className={props.class} href="/">
+          <div >Home</div>
+        </a>)}
       {currentPath != "/about" && (
-        <a href="about">
-          <div className="hover-underline-animation">About</div>
+        <a className={props.class} href="about">
+          <div >About</div>
         </a>
       )}
       {currentPath != "/projects" && (
-        <a href="projects">
-          <div className="hover-underline-animation">Projects</div>
+        <a className={props.class} href="projects">
+          <div >Projects</div>
         </a>
       )}
       {currentPath != "/contact" && (
-        <a href="contact">
-          <div className="hover-underline-animation">Contact</div>
+        <a className={props.class} href="contact">
+          <div >Contact</div>
         </a>
       )}
     </>

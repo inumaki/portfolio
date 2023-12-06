@@ -4,8 +4,11 @@ import Content from "./component/Content"
 import { Contact } from "./component/Contact"
 import { About } from "./component/About"
 import More from "./component/More"
-import { RouterProvider, createBrowserRouter, Outlet } from "react-router-dom";
+import { createBrowserRouter, Outlet } from "react-router-dom";
 import './App.css'
+import  {Projects}  from "./component/Projects"
+import { Resume } from "./component/Resume"
+import { ToastContainer } from "react-toastify"
 
 function App() {
 
@@ -39,6 +42,10 @@ export const router = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
+      },
+      {
+        path: "/projects",
+        element: <Projects/>
       },
     ],
   },
