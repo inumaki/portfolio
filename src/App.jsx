@@ -1,4 +1,4 @@
-// import Footer  from "./component/footer"
+import Footer  from "./component/footer"
 import Navbar  from "./component/navbar"
 import Content from "./component/Content"
 import { Contact } from "./component/Contact"
