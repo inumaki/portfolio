@@ -3,7 +3,7 @@ const project = [
     title: "Epic Eats",
     description: "Food Ordering Website",
     skills: ["Reactjs", "SpringBoot", "Redis"],
-    src: "../assets/projects/epiceats.png",
+    src: "/src/assets/projects/epiceats.png",
     link: "https://github.com/inumaki/EpicEats",
   },
   {
