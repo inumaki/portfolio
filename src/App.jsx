@@ -7,8 +7,6 @@ import More from "./component/More"
 import { createBrowserRouter, Outlet } from "react-router-dom";
 import './App.css'
 import  {Projects}  from "./component/Projects"
-import { Resume } from "./component/Resume"
-import { ToastContainer } from "react-toastify"
 
 function App() {
 
