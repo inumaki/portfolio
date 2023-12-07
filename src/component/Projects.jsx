@@ -3,7 +3,6 @@ import "../assets/Css/cards.css";
 import projectpng from "../assets/projects/epiceats.png";
 
 export const Projects = () => {
-  console.log(projectpng);
   return (
     <>
       <div className="title">Projects.</div>
