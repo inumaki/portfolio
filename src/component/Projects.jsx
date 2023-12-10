@@ -9,6 +9,7 @@ export const Projects = () => {
       <div className="card-container">
         {projects.map((project, index) => (
           <div className="card" key={index}>
+            {console.log(project.src)}
             <img src={project.src} alt={`Project ${project.id} Image`} />
             <a href={project.link} rel="noreferrer" target="_blank">
               <div className="overlay">
