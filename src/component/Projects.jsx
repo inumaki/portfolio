@@ -1,16 +1,20 @@
 import projects from "../constants/project";
 import "../assets/Css/cards.css";
-import projectpng from "../assets/projects/epiceats.png";
+import epiceats from "../assets/projects/epiceats.png";
+import todo from "../assets/projects/todo.png";
+import vote from "../assets/projects/vote.png";
+import yelpcamp from "../assets/projects/yelpcamp.png";
 
 export const Projects = () => {
+
+  const importImages = [epiceats, vote, yelpcamp, todo];
   return (
     <>
       <div className="title">Projects.</div>
       <div className="card-container">
         {projects.map((project, index) => (
           <div className="card" key={index}>
-            {console.log(project.src)}
-            <img src={project.src} alt={`Project ${project.id} Image`} />
+            <img src={importImages[index]} alt={`Project ${project.id} Image`} />
             <a href={project.link} rel="noreferrer" target="_blank">
               <div className="overlay">
                 <h3>{project.title}</h3>
