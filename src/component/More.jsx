@@ -9,7 +9,6 @@ function More() {
   var currentPath = useLocation().pathname;
   const nextPath = path.get(currentPath);
   const seeMoreText = text.get(currentPath);
-  console.log(nextPath, seeMoreText);
   return (
     <>
       <div className="more-about">
