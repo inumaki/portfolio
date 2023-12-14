@@ -54,6 +54,9 @@ body {
     margin-top: 0;
     padding-top: 16px;
   }
+  .more-about {
+    margin-bottom: 40px;
+  }
 }
 
 .navbar {
